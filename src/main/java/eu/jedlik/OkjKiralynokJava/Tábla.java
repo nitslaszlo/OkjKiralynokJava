@@ -74,7 +74,7 @@ public class Tábla // 1. feladat
         return üresDb;
     }
 
-    public void FájlbaÍr(String fájlNeve) {// 10. feladat 
+    public void FájlbaÍr(String fájlNeve) { // 10. feladat 
         try {
             FileWriter writer = new FileWriter(fájlNeve, true);
             for (int sor = 0; sor < 8; sor++) {
