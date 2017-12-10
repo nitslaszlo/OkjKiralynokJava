@@ -10,5 +10,10 @@ public class Kiralynok // 0. feladat
         System.out.println("\n6. feladat: A feltöltött tábla:");
         tábla.Elhelyez(8);
         tábla.Megjelenít();
+
+        System.out.println("\n9. feladat: Üres oszlopok és sorok száma:");
+        System.out.println("Oszlopok: " + tábla.ÜresOszlopokSzáma());
+        System.out.println("Sorok: " + tábla.ÜresSorokSzáma());
+
     }   
 }
