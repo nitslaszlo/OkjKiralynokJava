@@ -1,9 +1,13 @@
 package eu.jedlik.OkjKiralynokJava;
 
+import java.util.Random;
+
 public class Tábla // 1. feladat
 {
     private char[][] T; // 2. feladat
     private char ÜresCella; // 2. feladat
+
+    static private Random R = new Random();
 
     public Tábla(char üresCella){ // 3. feladat
         T = new char[8][8]; // 3.a
@@ -28,5 +32,20 @@ public class Tábla // 1. feladat
             System.out.println();
         }
     }
+
+    public void Elhelyez(int n) // 5. feladat
+    {
+        for (int i = 0; i < n;)
+        {
+            int sor = R.nextInt(8);
+            int oszlop = R.nextInt(8);
+            if (T[sor][oszlop] == ÜresCella)
+            {
+                T[sor][oszlop] = 'K';
+                i++;
+            }
+        }
+    }
+
 
 }
