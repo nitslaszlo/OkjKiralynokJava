@@ -7,7 +7,7 @@ public class Tábla // 1. feladat
     private char[][] T; // 2. feladat
     private char ÜresCella; // 2. feladat
 
-    static private Random R = new Random();
+    private static Random R = new Random();
 
     public Tábla(char üresCella) { // 3. feladat
         T = new char[8][8]; // 3.a
