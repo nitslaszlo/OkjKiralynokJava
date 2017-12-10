@@ -58,7 +58,7 @@ public class Tábla // 1. feladat
         return true;
     }
 
-    public int ÜresOszlopokSzáma() {// 8. feladat
+    public int ÜresOszlopokSzáma() { // 8. feladat
         int üresDb = 0;
         for (int oszlop = 0; oszlop < 8; oszlop++) {
             if (ÜresOszlop(oszlop)) üresDb++;
@@ -77,10 +77,8 @@ public class Tábla // 1. feladat
     public void FájlbaÍr(String fájlNeve) {// 10. feladat 
         try {
             FileWriter writer = new FileWriter(fájlNeve, true);
-            for (int sor = 0; sor < 8; sor++)
-            {
-                for (int oszlop = 0; oszlop < 8; oszlop++)
-                {
+            for (int sor = 0; sor < 8; sor++) {
+                for (int oszlop = 0; oszlop < 8; oszlop++) {
                     writer.write(T[sor][oszlop]);
                 }
                 writer.write("\r\n");

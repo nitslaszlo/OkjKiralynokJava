@@ -22,13 +22,10 @@ public class Kiralynok // 0. feladat
         File file = new File(fájlNeve);
         if (file.exists()) file.delete(); // 10.a
         System.out.println("10. feladat: " + fájlNeve);
-        for (int i = 1; i < 65; i++)
-        {
+        for (int i = 1; i < 65; i++) {
             Tábla aktTábla = new Tábla('*'); // 10.b
             aktTábla.Elhelyez(i); // 10.d
             aktTábla.FájlbaÍr(fájlNeve); // 10.c
         }
-
-
     }   
 }
