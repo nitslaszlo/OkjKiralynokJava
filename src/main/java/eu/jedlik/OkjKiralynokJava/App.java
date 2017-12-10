@@ -4,6 +4,6 @@ public class App
 {
     public static void main()
     {
-       new Kiralynok();
+       new Kiralynok(); // 0. feladat
     }
 }
