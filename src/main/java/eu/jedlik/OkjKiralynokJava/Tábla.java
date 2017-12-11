@@ -88,6 +88,5 @@ public class Tábla // 1. feladat
         } catch (IOException e) {
             e.printStackTrace();
         }
-
     }
 }
