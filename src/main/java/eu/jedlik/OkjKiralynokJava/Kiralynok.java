@@ -2,7 +2,7 @@ package eu.jedlik.OkjKiralynokJava;
 
 import java.io.File;
 import java.io.FileWriter; // 10. feladat
-import java.io.IOException; // 10. fladat
+import java.io.IOException; // 10. feladat
 
 public class Kiralynok // 0. feladat
 {
