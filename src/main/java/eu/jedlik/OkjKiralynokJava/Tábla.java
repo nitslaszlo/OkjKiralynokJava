@@ -74,9 +74,8 @@ public class Tábla // 1. feladat
         return üresDb;
     }
 
-    public void FájlbaÍr(String fájlNeve) {// 10. feladat 
+    public void FájlbaÍr(FileWriter writer) { // 10. feladat
         try {
-            FileWriter writer = new FileWriter(fájlNeve, true);
             for (int sor = 0; sor < 8; sor++) {
                 for (int oszlop = 0; oszlop < 8; oszlop++) {
                     writer.write(T[sor][oszlop]);
@@ -84,7 +83,6 @@ public class Tábla // 1. feladat
                 writer.write("\r\n");
             }
             writer.write("\r\n");
-            writer.close();
         } catch (IOException e) {
             e.printStackTrace();
         }
