@@ -10,5 +10,5 @@ public class Kiralynok // 0. feladat
         System.out.println("\n6. feladat: A feltöltött tábla:");
         tábla.Elhelyez(8);
         tábla.Megjelenít();
-    }   
+    }
 }
