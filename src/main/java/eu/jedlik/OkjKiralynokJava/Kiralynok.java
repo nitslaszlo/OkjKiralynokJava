@@ -24,8 +24,7 @@ public class Kiralynok // 0. feladat
         try {
             final String fájlNeve = "tablak64.txt";
             File file = new File(fájlNeve);
-            if (file.exists())
-                file.delete(); // 10.a
+            if (file.exists()) file.delete(); // 10.a
             System.out.println("10. feladat: " + fájlNeve);
             writer = new FileWriter(fájlNeve, true);
             for (int i = 1; i < 65; i++) {
