@@ -61,7 +61,8 @@ public class Tábla // 1. feladat
     public int ÜresOszlopokSzáma() { // 8. feladat
         int üresDb = 0;
         for (int oszlop = 0; oszlop < 8; oszlop++) {
-            if (ÜresOszlop(oszlop)) üresDb++;
+            if (ÜresOszlop(oszlop))
+                üresDb++;
         }
         return üresDb;
     }
@@ -69,7 +70,8 @@ public class Tábla // 1. feladat
     public int ÜresSorokSzáma() { // 8. feladat
         int üresDb = 0;
         for (int sor = 0; sor < 8; sor++) {
-            if (ÜresSor(sor)) üresDb++;
+            if (ÜresSor(sor))
+                üresDb++;
         }
         return üresDb;
     }
