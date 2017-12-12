@@ -6,5 +6,5 @@ public class Kiralynok // 0. feladat
         System.out.println("4. feladat: Az üres tábla:");
         final Tábla tábla = new Tábla('#');
         tábla.Megjelenít();
-    }   
+    }
 }
