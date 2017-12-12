@@ -15,5 +15,5 @@ public class Kiralynok // 0. feladat
         System.out.println("Oszlopok: " + tábla.ÜresOszlopokSzáma());
         System.out.println("Sorok: " + tábla.ÜresSorokSzáma());
 
-    }   
+    }
 }
