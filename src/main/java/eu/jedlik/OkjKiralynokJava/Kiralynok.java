@@ -7,6 +7,11 @@ import java.io.IOException; // 10. feladat
 public class Kiralynok // 0. feladat
 {
     public Kiralynok() {
+        //10. feladat
+        final String fájlNeve = "tablak64.txt";
+        File file = new File(fájlNeve);
+        if (file.exists()) file.delete(); // 10.a
+
         System.out.println("4. feladat: Az üres tábla:");
         final Tábla tábla = new Tábla('#');
         tábla.Megjelenít();
@@ -19,15 +24,10 @@ public class Kiralynok // 0. feladat
         System.out.println("Oszlopok: " + tábla.ÜresOszlopokSzáma());
         System.out.println("Sorok: " + tábla.ÜresSorokSzáma());
 
-        // 10. feladat
+        System.out.println("10. feladat: " + fájlNeve);
         FileWriter writer = null;
         try {
-            final String fájlNeve = "tablak64.txt";
-            File file = new File(fájlNeve);
-            if (file.exists())
-                file.delete(); // 10.a
-            System.out.println("10. feladat: " + fájlNeve);
-            writer = new FileWriter(fájlNeve, true);
+            writer = new FileWriter(fájlNeve);
             for (int i = 1; i < 65; i++) {
                 Tábla aktTábla = new Tábla('*'); // 10.b
                 aktTábla.Elhelyez(i); // 10.d
